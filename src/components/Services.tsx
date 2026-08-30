@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { services } from '@/data';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check, Tag } from 'lucide-react';
 
 export default function Services() {
   const [active, setActive] = useState(0);
@@ -63,6 +63,10 @@ export default function Services() {
           </div>
 
           <div key={current.id} className="animate-fade-in">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-gold-400/40 bg-gold-400/10 px-3 py-1">
+              <Tag className="h-3.5 w-3.5 text-gold-400" />
+              <span className="text-xs font-bold uppercase tracking-wider text-gold-300">50% OFF — Grand Opening</span>
+            </div>
             <h3 className="font-serif text-3xl font-bold text-white sm:text-4xl">{current.title}</h3>
             <p className="mt-4 text-base leading-relaxed text-ink-300">{current.description}</p>
 
@@ -79,9 +83,9 @@ export default function Services() {
 
             <a
               href="#contact"
-              className="group mt-8 inline-flex items-center gap-2 rounded-full border border-gold-400/40 px-6 py-3 text-sm font-semibold text-gold-400 transition-all duration-300 hover:bg-gold-400/10"
+              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 px-6 py-3 text-sm font-semibold text-ink-900 transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/30"
             >
-              Enquire about {current.title}
+              Book at 50% Off
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>

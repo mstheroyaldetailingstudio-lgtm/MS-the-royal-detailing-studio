@@ -50,15 +50,26 @@ export default function Hero() {
             and professional automotive protection services.
           </p>
 
+          {/* Grand opening offer pill */}
+          <div
+            className="mt-6 inline-flex animate-fade-up items-center gap-2 rounded-full border border-gold-400/40 bg-gold-400/10 px-4 py-2"
+            style={{ animationDelay: '0.35s' }}
+          >
+            <span className="flex h-2 w-2 animate-pulse rounded-full bg-gold-400" />
+            <span className="text-sm font-semibold text-gold-300">
+              Grand Opening: 50% OFF every service
+            </span>
+          </div>
+
           <div
             className="mt-7 flex animate-fade-up flex-col gap-4 sm:flex-row"
             style={{ animationDelay: '0.4s' }}
           >
             <a
-              href="#services"
+              href="#offer"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 px-8 py-4 text-sm font-semibold text-ink-900 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/30"
             >
-              Explore Services
+              Claim 50% Off
 
               <ChevronDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             </a>

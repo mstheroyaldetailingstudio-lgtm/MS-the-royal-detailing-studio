@@ -4,6 +4,7 @@ import Logo from '@/components/Logo';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
+  { label: 'Offer', href: '#offer' },
   { label: 'Services', href: '#services' },
   { label: 'Process', href: '#process' },
   { label: 'Gallery', href: '#gallery' },
@@ -23,7 +24,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`sticky top-0 z-50 transition-all duration-500 ${
         scrolled ? 'glass py-3 shadow-lg shadow-black/50' : 'py-5 bg-transparent'
       }`}
     >

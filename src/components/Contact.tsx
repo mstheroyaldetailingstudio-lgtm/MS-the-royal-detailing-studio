@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Send, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Send, CircleCheck as CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 import { services } from '@/data';
 
@@ -18,7 +18,8 @@ export default function Contact() {
     const serviceLabel = selectedService ? selectedService.title : form.service;
 
     const text =
-      `*New Booking Request — MS The Royal Detailing Studio*\n\n` +
+      `*New Booking Request — MS The Royal Detailing Studio*\n` +
+      `*Grand Opening: 50% OFF applied*\n\n` +
       `*Name:* ${form.name}\n` +
       `*Phone:* ${form.phone}\n` +
       `*Vehicle Model:* ${form.vehicle || 'Not specified'}\n` +
@@ -50,7 +51,7 @@ export default function Contact() {
             Book Your <span className="gold-text">Appointment</span>
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-base text-ink-300">
-            Ready to give your car the treatment it deserves? Fill the form and we'll receive your details instantly on WhatsApp.
+            Ready to give your car the treatment it deserves? Fill the form and we'll receive your details instantly on WhatsApp. <span className="font-semibold text-gold-400">Grand Opening: 50% OFF on every service.</span>
           </p>
         </div>
 
