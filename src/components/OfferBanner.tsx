@@ -11,7 +11,7 @@ export default function OfferBanner() {
       <div className="mx-auto flex max-w-7xl items-center justify-center gap-3 px-10 py-2.5 text-center">
         <Sparkles className="h-4 w-4 flex-shrink-0 animate-pulse text-ink-900" />
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-900 sm:text-sm">
-          Grand Opening — <span className="font-extrabold">50% OFF</span> on every service. Limited time only.
+          Grand Opening — <span className="font-extrabold">Up to 50% OFF</span> on every service. Limited time only.
         </p>
         <a
           href="#contact"

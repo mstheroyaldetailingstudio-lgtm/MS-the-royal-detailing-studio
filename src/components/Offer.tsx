@@ -17,13 +17,13 @@ export default function Offer() {
           </div>
 
           <h2 className="font-serif text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
-            Flat <span className="gold-shimmer">50% OFF</span>
+            Up to <span className="gold-shimmer">50% OFF</span>
             <br />
             On Every Service
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-ink-300">
-            To celebrate our grand opening, every service at MS The Royal Detailing Studio is now half price —
+            To celebrate our grand opening, save up to 50% on every service at MS The Royal Detailing Studio —
             from PPF and ceramic coating to interior detailing and alloy painting. Premium care, unbeatable value.
           </p>
 
@@ -32,7 +32,7 @@ export default function Offer() {
               href="#contact"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 px-8 py-4 text-sm font-semibold text-ink-900 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/30"
             >
-              Claim Your 50% Off
+              Claim Up to 50% Off
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
