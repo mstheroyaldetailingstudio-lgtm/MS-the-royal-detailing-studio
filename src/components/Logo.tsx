@@ -1,4 +1,4 @@
-import logoImage from '../../MS.jpg.jpeg';
+import logoImage from '../../Logo.jpeg';
 
 export default function Logo({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
   const dim = size === 'sm' ? 'h-9 w-9' : size === 'lg' ? 'h-16 w-16' : 'h-10 w-10';
