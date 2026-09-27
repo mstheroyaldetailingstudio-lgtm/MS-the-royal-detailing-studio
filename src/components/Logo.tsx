@@ -5,7 +5,7 @@ export default function Logo({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
   return (
     <div className="flex items-center gap-2.5">
       <div className={`relative ${dim} flex-shrink-0 overflow-hidden rounded-full`}>
-        <img src="/Logo_.jpg.jpeg" alt="MS The Royal logo" className="h-full w-full object-cover" />
+        <img src="/Logo_.jpg.jpeg?v=2" alt="MS The Royal logo" className="h-full w-full object-cover" />
       </div>
 
       {/* Wordmark */}
