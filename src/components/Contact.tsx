@@ -5,7 +5,7 @@ import { services } from '@/data';
 // Replace this with your WhatsApp number (international format, no + or spaces)
 const WHATSAPP_NUMBER = '917075874145';
 // Replace with your Google Maps link
-const MAPS_LINK = 'https://maps.google.com/?q=MS+The+Royal+Detailing+Studio';
+const MAPS_LINK = 'https://maps.app.goo.gl/8brMhkF1PYsSTada8';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -59,7 +59,7 @@ export default function Contact() {
           {/* Contact info */}
           <div className="flex flex-col gap-4">
             {[
-              { icon: MapPin, title: 'Visit Us', lines: ['5, Market Rd, Muneshwara Nagar,', 'Ramamurthy Nagar, Bengaluru, Karnataka 560016'], isLink: true, href: 'https://maps.app.goo.gl/wk4sHDBHD25xs2tV6' },
+              { icon: MapPin, title: 'Visit Us', lines: ['5, Market Rd, Muneshwara Nagar,', 'Ramamurthy Nagar, Bengaluru, Karnataka 560016'], isLink: true, href: 'https://maps.app.goo.gl/8brMhkF1PYsSTada8' },
               { icon: Phone, title: 'Call Us', lines: ['+91 7075874145', '+91 7075874145'], isLink: false, href: '' },
               { icon: Mail, title: 'Email Us', lines: ['hello@msroyaldetailing.in', 'bookings@msroyaldetailing.in'], isLink: false, href: '' },
               { icon: Clock, title: 'Studio Hours', lines: ['Monday – Sunday: 9:30 AM – 9:30 PM'], isLink: false, href: '' },
@@ -183,6 +183,17 @@ export default function Contact() {
               </form>
             )}
           </div>
+        </div>
+
+        {/* Embedded Google Map */}
+        <div className="mt-8 overflow-hidden rounded-3xl border border-gold-400/10">
+          <iframe
+            src="https://maps.google.com/maps?q=MS+The+Royal+Detailing+Studio,+5,+Market+Rd,+Muneshwara+Nagar,+Ramamurthy+Nagar,+Bengaluru,+Karnataka+560016&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            title="MS The Royal Detailing Studio location"
+            className="h-[350px] w-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>
